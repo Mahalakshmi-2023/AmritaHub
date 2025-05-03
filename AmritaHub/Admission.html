@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>College Admission Form</title>
+<style>
+
+  body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(270deg, #6e8efb, #a777e3, #f760a1, #fbc1cc);
+    background-size: 800% 800%;
+    animation: backgroundAnimation 30s ease infinite;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+  /* Other styles... */
+  background-image: url('https://st.depositphotos.com/1518767/3617/i/950/depositphotos_36171163-stock-photo-college-students-sitting-on-grass.jpg'); /* Add your image URL here */
+  background-size: cover;
+  animation: backgroundAnimation 30s ease infinite;
+}
+
+/* Define the keyframes for the animation */
+@keyframes backgroundAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+  .form-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  }
+
+  h2 {
+    text-align: center;
+    color: #a3133f;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  .form-group label {
+    display: block;
+    color: #a3133f;
+  }
+
+  .form-group input[type='text'],
+  .form-group input[type='email'],
+  .form-group input[type='date'],
+  .form-group select,
+  .form-group textarea {
+    width: 97%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+
+  .form-group input[type='submit'] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #a3133f;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+
+  .form-group input[type='submit']:hover {
+    background-color: #a3133f;
+  }
+.link-button {
+  display: inline-block;
+  background-color: #a3133f;
+  color: white;
+  padding: 15px 25px;
+  margin-top: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.link-button:hover {
+  background-color: #45a049;
+}
+
+</style>
+</head>
+<body>
+<div class="form-container">
+  <h2>College Admission Form</h2>
+  <form action="/submit-form" method="post">
+    <div class="form-group">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="dob">Date of Birth</label>
+      <input type="date" id="dob" name="dob" required>
+    </div>
+    <div class="form-group">
+      <label for="course">Course Applied For</label>
+        <select onchange="window.open(this.value, 'bang')" >
+        <option value="">Select a course</option>
+        <option value="documentsbca.html">BCA</option>
+        <option value="documentsbba.html" >BBA</option>
+        <option value="documentsbtech.html">B.Tech</option>
+        <option value="documentsmba.html">MBA</option>
+        <option value="documentsmca.html">MCA</option>
+        <option value="documentsmtech.html">M.Tech</option>
+        </select>
+   </div>
+  <div class="form-group">
+      <label for="bio">Biography</label>
+      <textarea id="bio" name="bio" rows="4" required></textarea>
+    </div>
+<div class="form-group">
+        <iframe style="border:none;" name="bang" height="400" width="100%"></iframe>
+  </div>
+    <div class="form-group">
+<a href="submitanother.html" class="link-button">submit</a>
+</div>
+</form>
+
+</div>
+</body>
+</html>

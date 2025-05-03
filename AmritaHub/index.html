@@ -1,0 +1,1185 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>UID casestudy</title>
+
+	<!-- font Awesome CDN link -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
+	<!-- External CSS -->
+	<link rel="stylesheet" href="style.css">
+
+	<!-- JQuery CDN link -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700;1,800;1,900&display=swap');
+
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body
+{
+	font-family: 'Poppins', sans-serif;
+}
+
+h1
+{
+	font-size: 2.5rem;
+	font-weight: 700;
+	color: rgb(35, 35, 85);
+}
+
+span
+{
+	font-size: .9rem;
+}
+
+h6
+{
+	font-size: 1.1rem;
+	color: rgb(24, 24, 49);
+}
+
+
+/*------------- Navigation style start ------------*/
+nav
+{
+	position: fixed;
+	width: 100%;
+	background-color: #fff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1vw 8vw;
+	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+	z-index: 1;
+}
+
+nav .logo
+{
+	width: 150px;
+	cursor: pointer;
+}
+
+nav .navigation
+{
+	display: flex;
+}
+
+#menu-btn
+{
+	width: 30px;
+	height: 30px;
+	display: none;
+}
+
+#menu-close
+{
+	display: none;
+}
+
+nav .navigation ul
+{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+nav .navigation ul li
+{
+	list-style: none;
+	margin-left: 30px;
+}
+
+nav .navigation ul li a
+{
+	text-decoration: none;
+	color: rgb(21, 21, 100);
+	font-size: 16px;
+	font-weight: 500;
+	transition: 0.3s ease;
+}
+
+nav .navigation ul li a.active,
+nav .navigation ul li a:hover
+{
+	color: #FDC93B;
+
+}
+/*------------- Navigation style end ------------*/
+
+
+
+/*------------- Hero section styling start --------------*/
+#home
+{
+	background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5,4,46,0.7)), url("https://webfiles.amrita.edu/2020/05/IlZJZE8c-amrita-vishwa-vidyapeetham-coimbatore-campus-dron-image-01-2.jpg");
+	width: 100%;
+	height: 100vh;
+	background-size: cover;
+	background-position: center center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding-top: 40px;
+}
+
+#home h2
+{
+	color: #fff;
+	font-size: 2.2rem;
+	letter-spacing: 1px;
+}
+
+#home p
+{
+	width: 50%;
+	color: #fff;
+	font-size: 0.9rem;
+	line-height: 25px;
+}
+
+#home .btn
+{
+	margin-top: 30px;
+}
+
+#home a
+{
+	text-decoration: none;
+	font-size: 0.9rem;
+	padding: 13px 35px;
+	background-color: #fff;
+	font-weight: 600;
+	border-radius: 5px;
+}
+
+#home a.blue
+{
+	color: #fff;
+	background: rgb(21, 21, 100);
+	transition: 0.3s ease;
+}
+
+#home a.blue:hover
+{
+	color: rgb(21, 21, 100);
+	background: #fff;
+}
+
+#home a.yellow
+{
+	color: #fff;
+	background: #fdc938;
+	transition: 0.3s ease;
+}
+
+#home a.yellow:hover
+{
+	color: rgb(21, 21, 100);
+	background: #fff;
+}
+/*------------- Hero section styling end --------------*/
+
+
+/*------------- Features section styling start -------------*/
+#features
+{
+	padding: 5vw 8vw 0 8vw;
+	text-align: center;
+}
+
+#features .fea-base
+{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	grid-gap: 1rem;
+	margin-top: 50px;
+}
+
+#features .fea-box
+{
+	background: #edf1f2;
+	text-align: start;
+	padding: 1.2rem;
+	border-radius: 6px;
+}
+
+#features .fea-box i
+{
+	font-size: 2.3rem;
+	color: rgb(44, 44, 80);
+}
+
+#features .fea-box h3
+{
+	font-size: 1.2rem;
+	font-weight: 600;
+	color: rgb(46, 46, 59);
+	padding: 13px 0 7px 0;
+}
+
+#features .fea-box p
+{
+	font-size: 1rem;
+	font-weight: 400;
+	color: rgb(70, 70, 87);
+}
+/*------------- Features section styling end -------------*/
+
+
+/*------------- Courses section styling start ------------*/
+#course
+{
+	padding: 8vw 8vw 8vw 8vw;
+	text-align: center;
+}
+
+#course .course-box
+{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	grid-gap: 1rem;
+	margin-top: 50px;
+}
+
+#course .courses
+{
+	text-align: start;
+	background: #edf1f2;
+	height: 100%;
+	position: relative;
+}
+
+#course .courses img
+{
+	width: 100%;
+	height: 60%;
+	background-size: cover;
+	background-position: center;
+}
+
+#course .courses .details
+{
+	padding: 15px 15px 0 15px;
+}
+
+#course .courses .details i
+{
+	color: #fdc93b;
+	font-size: .9rem;
+}
+
+#course .courses .cost
+{
+	background-color: rgb(74, 74, 136);
+	color: #fff;
+	line-height: 70px;
+	width: 70px;
+	height: 70px;
+	text-align: center;
+	border-radius: 50%;
+	position: absolute;
+	right: 15px;
+	bottom: 100px;
+}
+/*------------- Courses section styling end ------------*/
+
+
+/*------------- Registration section styling start ----------*/
+#registration
+{
+	padding: 6vw 8vw 6vw 8vw;
+	background-image: linear-gradient(rgba(99,112,168,0.5), rgba(81,91,233,0.5)),url("img/signup.jpg");
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#registration .reminder, #registration .reminder h1
+{
+	color: #fff;
+}
+
+#registration .reminder .time
+{
+	display: flex;
+	margin-top: 40px;
+}
+
+#registration .reminder .time .date
+{
+	text-align: center;
+	padding: 13px 33px;
+	background: rgba(255, 255, 255, 0.25);
+	backdrop-filter: blur(4px);
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+	border-radius: 10px;
+	margin: 0 5px 10px 5px;
+	border: 1px solid rgba(255, 255, 255, 0.18);
+	font-size: 1.1rem;
+	font-weight: 600;
+}
+
+#registration .form
+{
+	background: #fff;
+	border-radius: 8px;
+	display: flex;
+	flex-direction: column;
+	padding: 40px;
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+#registration .form input
+{
+	margin: 15px 0;
+	padding: 15px 10px;
+	border: 1px solid rgb(84, 40, 241);
+	outline: none;
+}
+
+#registration .form input::placeholder
+{
+	color: #413c3c;
+	font-weight: 500;
+	font-size: 0.9rem;
+}
+
+#registration .form .btn
+{
+	margin-top: 20px;
+}
+
+#registration .form a.yellow
+{
+	text-decoration: none;
+	font-size: 0.9rem;
+	padding: 13px 35px;
+	background-color: #fff;
+	font-weight: 600;
+	border-radius: 5px;
+	color: #fff;
+	background: #fdc938;
+	transition: 0.3s ease;
+}
+
+#registration .form a.yellow:hover
+{
+	color: rgb(21, 21, 100);
+	background: #fff;
+}
+/*------------- Registration section styling end ----------*/
+
+
+
+/*------------- Experts section styling starts ----------*/
+#experts
+{
+	padding: 8vw 8vw 8vw 8vw;
+	text-align: center;
+}
+
+#experts .expert-box
+{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-gap: 1rem;
+	margin-top: 50px;
+}
+
+#experts .expert-box .profile
+{
+	background: #fafaf1;
+	padding: 30px 10px;
+	box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+}
+
+#experts .expert-box .profile:hover
+{
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+
+.pro-links
+{
+	margin-top: 10px;
+}
+
+.pro-links i
+{
+	padding: 10px 13px;
+	border: 1px solid rgb(21, 21, 100);
+	cursor: pointer;
+	transition: 0.3s ease;
+}
+
+.pro-links i:hover
+{
+	background: rgb(21, 21, 100);
+	color: #fff;
+}
+.expert-box {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px;
+        }
+        .profile {
+            text-align: center;
+            margin: 10px;
+        }
+        .profile img {
+            width: 150px; /* Set the desired width */
+            height: auto; /* Maintain aspect ratio */
+        }
+        .pro-links i {
+            margin: 5px;
+            font-size: 24px;
+        }
+/*------------- Experts section styling ends ----------*/
+
+
+
+/*------------- Footer section styling starts ------------*/
+footer
+{
+	padding: 8vw;
+	background-color: #101c32;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}
+
+footer .footer-col
+{
+	padding-bottom: 40px;
+}
+
+footer h3
+{
+	color: rgb(241, 240, 245);
+	font-weight: 400;
+	padding-bottom: 20px;
+}
+
+footer li
+{
+	list-style: none;
+	color: #7b838a;
+	padding: 10px 0;
+	font-size: 15px;
+	cursor: pointer;
+	transition: 0.3s ease;
+}
+
+footer li:hover
+{
+	color: rgb(241, 240, 245);
+}
+
+footer p
+{
+	color: #7b838a;
+}
+
+footer .subscribe
+{
+	margin-top: 20px;
+}
+
+footer input
+{
+	width: 220px;
+	padding: 15px 12px;
+	background: #334F6C;
+	border: none;
+	outline: none;
+	color: #fff;
+}
+
+footer .subscribe a
+{
+	text-decoration: none;
+	font-size: 0.9rem;
+	padding: 12px 15px;
+	background-color: #fff;
+	font-weight: 600;
+}
+
+footer .subscribe a.yellow
+{
+	color: #fff;
+	background: #fdc93b;
+	transition: 0.3s ease;
+}
+
+footer .subscribe a.yellow:hover
+{
+	color: rgb(21, 21, 100);
+	background: #fff;
+}
+
+footer .copyright
+{
+	margin-top: 20px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+footer .copyright p, footer .copyright p > a
+{
+	color: #fff;
+	text-decoration: none;
+}
+
+footer .copyright .pro-links
+{
+	margin-top: 0px;
+}
+
+footer .copyright .pro-links i
+{
+	background-color: #5f7185;
+	color: #fff;
+}
+
+footer .copyright .pro-links i:hover
+{
+	background: #fdc93b;
+	color: #2c2c2c;
+}
+/*------------- Footer section styling ends ------------*/
+
+
+
+/*---------------------------------------------------------*/
+/*-------------------- Ipad screen styling ----------------*/
+/*---------------------------------------------------------*/
+@media screen and (max-width: 789px)
+{
+	nav
+	{
+		padding: 15px 20px;
+	}
+
+	nav img
+	{
+		width: 130px;
+	}
+
+	#menu-btn
+	{
+		display: initial;
+	}
+
+	#menu-close
+	{
+		display: initial;
+		font-size: 1.6rem;
+		color: #fff;
+		padding: 30px 0 20px 20px;
+	}
+
+	nav .navigation ul
+	{
+		position: absolute;
+		top: 0;
+		right: -220px;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+		width: 220px;
+		height: 100vh;
+		background: rgba(17, 20, 104, 0.45);
+		backdrop-filter: blur(4.5px);
+		border: 1px solid rgba(255, 255, 255, 0.18);
+		transition: 0.3s ease-in;
+	}
+
+	nav .navigation ul.active
+	{
+		right: 0;
+	}
+
+	nav .navigation ul li
+	{
+		padding: 20px 0 20px 40px;
+		margin-left: 0;
+	}
+
+	nav .navigation ul li a
+	{
+		color: #fff;
+	}
+
+	#home
+	{
+		padding: 0px;
+	}
+
+	#home p
+	{
+		width: 90%;
+	}
+
+	#features
+	{
+		padding: 8vw 4vw 0 4vw;
+	}
+
+	#course
+	{
+		padding: 8vw 4vw 8vw 4vw;
+	}
+
+	#registration
+	{
+		padding: 6vw 4vw 6vw 4vw;
+		gap: 2.2rem;
+	}
+
+	#registration .reminder .time
+	{
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		margin-top: 40px;
+	}
+      #style-select
+	{
+		padding: 6vw 4vw 6vw 4vw;
+		gap: 2.2rem;
+	}
+
+	#style-select .reminder .time
+	{
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		margin-top: 40px;
+	}
+
+
+	#experts
+	{
+		padding: 8vw 4vw 6vw 4vw;
+	}
+
+	footer .copyright .pro-links
+	{
+		margin-top: 20px;
+	}
+}
+
+
+@media screen and (max-width: 475px)
+{
+	#registration
+	{
+		flex-direction: column;
+	}
+
+	.reminder p, .reminder h1
+	{
+		text-align: center;
+	}
+
+	.reminder h1
+	{
+		font-size: 1.8rem;
+	}
+
+	#registration .reminder .time
+	{
+		justify-content: space-evenly;
+		margin-top: 20px;
+	}
+#style-select
+	{
+		flex-direction: column;
+	}
+
+	.reminder p, .reminder h1
+	{
+		text-align: center;
+	}
+
+	.reminder h1
+	{
+		font-size: 1.8rem;
+	}
+
+	#style-select .reminder .time
+	{
+		justify-content: space-evenly;
+		margin-top: 20px;
+	}
+
+}
+
+</style>
+<body>
+	<!-- Navigation start -->
+	<nav>
+		<img src="https://th.bing.com/th/id/R.2795d68c7fbf4730b97f1ab38be370ad?rik=yg9zGXWFQp%2bC0w&riu=http%3a%2f%2fieomsociety.org%2findia2021%2fwp-content%2fuploads%2f2021%2f01%2fLogo_AMRITA-2.png&ehk=LDlkidMPvE8A%2foOCqZKpC0DF1rJ53veLHDAQMf%2f8WuQ%3d&risl=&pid=ImgRaw&r=0" class="logo" alt="">
+
+		<div class="navigation">
+			<ul>
+				<i id="menu-close" class="fas fa-times"></i>
+				<li><a href="index.html" target="_blank" class="active">Home</a></li>
+				<li><a href="amma.html" target="_blank" >Amma</a></li>
+                                <li><a href="Admission.html" target="_blank" >Admissions</a></li>
+				<li><a href="homepage5.html" target="_blank" >Campus</a></li>
+				<li><a href="Events.html" target="_blank" >Events</a></li>
+				<li><a href="contact.html" target="_blank" >Contact Us</a></li>
+                                <li><a href="sports3.html" target="_blank" >Sports</a></li>
+			</ul>
+
+			<img src="https://webfiles.amrita.edu/2020/05/IlZJZE8c-amrita-vishwa-vidyapeetham-coimbatore-campus-dron-image-01-2.jpg" id="menu-btn" alt="image">
+
+		</div>
+	</nav>
+	<!-- Navigation ends -->
+
+
+	<!-- Hero section starts from here -->
+	<section id="home">
+		<h2>
+			Enhance Your Future With AMRITA
+		</h2>
+		<p>
+			Amrita Vishwa Vidyapeetham is a multi-disciplinary, research-intensive, private university, educating a vibrant student population of over 24,000 by 1700+ strong faculty.
+		</p>
+		<div class="btn">
+			<a href="https://www.amrita.edu/about"  target="_blank" class="blue">About</a>
+			<a href="https://www.amrita.edu/admissions/btech"   target="_blank" class="yellow">Learn More</a>
+		</div>
+	</section>
+	<!-- Hero section ends from here -->
+
+
+	<!-- Features section starts from here -->
+	<section id="features">
+		<h1>Awesome Features</h1>
+		
+		<div class="fea-base">
+			<div class="fea-box">
+				<i class="fas fa-graduation-cap"></i>
+				<h3>Scholorship Facility</h3>
+				<p>
+					180+ collaborations & 20,000+ Alumini
+				</p>
+			</div>
+
+			<div class="fea-box">
+				<i class="fa-solid fa-book-bookmark"></i>
+				<h3>Excellence centers</h3>
+				<p>
+					60+ centers of excellence & 1,700+ strong faculty				</p>
+			</div>
+
+			<div class="fea-box">
+				<i class="fas fa-award"></i>
+				<h3>Global Certification</h3>
+				<p>
+					400+ Companies Visit
+				</p>
+			</div>
+		</div>
+	</section>
+	<!-- Features section ends from here -->
+
+
+	<!-- Courses section starts from here -->
+	<section id="course">
+		<h1>About us</h1>
+		<p>Amrita University stands as one of India’s preeminent private educational institutions. Encompassing an expansive area of over 1200 acres, these campuses offer an impressive built-up space of more than 100 lakh square feet. Renowned for its commitment to academic excellence, Amrita University consistently ranks among the top-tier private universities in the nation, solidifying its reputation as a beacon of quality education.</p>
+
+		<div class="course-box">
+			<div class="courses">
+				<img src="https://webfiles.amrita.edu/2023/06/B0pDmdyz-impact-2023-ranking.png" alt="">
+				<div class="details">
+					<span>Updated 21/8/23</span>
+					<h6>Rankings</h6>
+
+					<div class="star">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+
+						<span>(239)</span>
+					</div>
+				</div>
+							</div>
+
+			<div class="courses">
+				<img src="https://webfiles.amrita.edu/2021/10/YENQvEt8-ettimadai-3-470x285-1.jpg" alt="">
+				<div class="details">
+					<h6>Vision</h6>
+                                    <p>  to be an  institution that thrives on its commitment to the transformative power of value-based education, providing the impact </p>
+										
+				</div>
+				
+			</div>
+
+			<div class="courses">
+				<img src="https://webfiles.amrita.edu/2020/03/tOPwK9QO-790-2021-08-06T181204.605-768x380.jpg" alt="">
+				<div class="details">
+					<h6>Mission</h6>
+<p> Amma’s  mission of providing education for life, and emphasis on compassion driven research, has shaped Amrita as a institution</p></div> </div>
+
+									
+				
+			<div class="courses">
+				<img src="https://webfiles.amrita.edu/2021/09/Kkut9UoG-amritapuri-470x285-1.jpg" alt="">
+				<div class="details">
+			      <h6>Education for life </h6>
+<p>At Amrita, we believe that education should also impart a culture of the heart, based on enduring values and inner strength. Amrita’s culture of education helps to inculcate  that in our students </p>
+			      </div>
+				</div>
+				
+			<div class="courses">
+				<img src="https://webfiles.amrita.edu/2019/07/2jYZEhDn-matha_amritanandamayi_ashram.jpg" alt="">
+				<div class="details">
+					
+					<h6>Compassion Driven Research</h6>
+<p>Our motivation to pursue research is focused on alleviating major global problems related to poverty, starvation, sickness, environmental pollution, and contamination. </p>
+
+									</div></div>
+				
+			<div class="courses">
+				<img src="https://www.amrita.edu/wp-content/themes/amrita/images/map2.png" alt="">
+				<div class="details">
+				<h6>Find us</h6>
+<p>Accredited ‘A++’ by NAAC, Amrita  is a  university having six campuses spread across three states in India; Kerala, Tamil Nadu and Karnataka. The university’s headquarters is situated at Ettimadai, Coimbatore, Tamil Nadu. </p>
+					</div></div>
+	</section>
+	<!-- About us  section ends from here -->
+
+
+	<!-- Registration section starts from here -->
+	<section id="registration">
+		<div class="reminder">
+			<h1>DIRECTORATE OF ADMISSIONS</h1>
+<p>
+Attention Please !
+
+Amrita Vishwa Vidyapeetham has not appointed any Agent or Third-Party Client for securing admission in any programme. Students are hereby requested to contact only the toll-free number on our website for any admission related queries.
+
+- Issued In Public Interest By Directorate Of Admissions And Academic Outreach </p> 
+					</div>
+
+		<div class="form">
+  <h3>Enquire Now !</h3>
+
+  <input type="text" placeholder="Name *" required>
+
+  <input type="email" placeholder="Email *" required>
+<pre>
+
+</pre>
+
+  <select class="styled-select" required>
+    <option value="" disabled selected>+91 - Phone Number *</option>
+    <!-- Add options for phone number -->
+  </select>
+<pre>
+
+</pre>
+
+  <select class="styled-select" required>
+    <option value="" disabled selected>Select Class *</option>
+    <option value="class11">Class 11</option>
+    <option value="class12">Class 12</option>
+  </select>
+
+<pre>
+
+</pre>
+  <select class="styled-select" required>
+    <option value="" disabled selected>Select Stream *</option>
+    <option value="PCM">PCM</option>
+    <option value="PCB">PCB</option>
+    <option value="Commerce">Commerce</option>
+    <option value="Arts">Arts</option>
+  </select>
+<pre>
+
+</pre>
+
+  <select class="styled-select" required>
+    <option value="" disabled selected>Select Present state *</option>
+    <option value="AN">Andaman and Nicobar Islands</option>
+    <option value="AP">Andhra Pradesh</option>
+    <option value="AR">Arunachal Pradesh</option>
+    <option value="AS">Assam</option>
+    <option value="BR">Bihar</option>
+    <option value="CH">Chandigarh</option>
+    <option value="CT">Chhattisgarh</option>
+    <option value="DN">Dadra and Nagar Haveli</option>
+    <option value="DD">Daman and Diu</option>
+    <option value="DL">Delhi</option>
+    <option value="GA">Goa</option>
+    <option value="GJ">Gujarat</option>
+    <option value="HR">Haryana</option>
+    <option value="HP">Himachal Pradesh</option>
+    <option value="JK">Jammu and Kashmir</option>
+    <option value="JH">Jharkhand</option>
+    <option value="KA">Karnataka</option>
+    <option value="KL">Kerala</option>
+    <option value="LA">Ladakh</option>
+    <option value="LD">Lakshadweep</option>
+    <option value="MP">Madhya Pradesh</option>
+    <option value="MH">Maharashtra</option>
+    <option value="MN">Manipur</option>
+    <option value="ML">Meghalaya</option>
+    <option value="MZ">Mizoram</option>
+    <option value="NL">Nagaland</option>
+    <option value="OR">Odisha</option>
+    <option value="PY">Puducherry</option>
+    <option value="PB">Punjab</option>
+    <option value="RJ">Rajasthan</option>
+    <option value="SK">Sikkim</option>
+    <option value="TN">Tamil Nadu</option>
+    <option value="TG">Telangana</option>
+    <option value="TR">Tripura</option>
+    <option value="UP">Uttar Pradesh</option>
+    <option value="UT">Uttarakhand</option>
+    <option value="WB">West Bengal</option>
+  </select>
+
+ 
+  <div class="btn">
+    <a href="#" class="yellow">Submit Form</a>
+  </div>
+<pre>
+
+
+</pre>
+  <p>By Clicking Submit, I Authorize Amrita Admissions Team to call me to inform about the Admission Process. This consent will override any registration for DNC/NDNC.</p>
+</div> </div> </div>
+</section>
+</div>
+	<!-- Experts section starts from here -->
+	<section id="experts">
+    <h1>The Live-in-Labs® Program</h1>
+    <p>Learning program that breaks classroom and lab barriers by applying learned theory in real-world settings. This credit-based academic program draws on principles of lean research for the development and deployment of sustainable solutions for current challenges faced by rural communities in India.</p>
+    <div class="expert-box">
+        <div class="profile">
+            <img src="https://webfiles.amrita.edu/2022/10/qMNBoHud-Skill-Development.jpg" alt="">
+            <h6>Health & Hygiene</h6>
+            <p>A Study on Maternal and Child Health</p>
+<a href="https://www.amrita.edu/research/project/study-maternal-and-child-health" target="_blank">Read More </a>
+            <div class="pro-links">
+                <i class="fab fa-facebook"></i>
+                
+            </div>
+        </div>
+
+        <div class="profile">
+            <img src="https://webfiles.amrita.edu/2022/10/q4sKV7q2-Drought.jpg" alt="">
+            <h6>Water & Sanitation </h6>
+            <p>Design of on-farm reservoir for irrigation water supply in Kerkatta, Jharkhand</p>
+<a href="https://amrita.edu/research/project/design-farm-reservoir-irrigation-water-supply-kerkatta-jharkhand/" target="_blank">Read More </a>
+				
+
+            <div class="pro-links">
+                                <i class="fab fa-linkedin-in"></i>
+            </div>
+        </div>
+
+        <div class="profile">
+            <img src="https://webfiles.amrita.edu/2022/10/mXboIgsy-Climate-monitoring.jpg" alt="">
+            <h6>Agriculture & Risk Management </h6>
+            <p>Alternative Agricultural Techniques for Sustainable Food Supply</p>
+<a href="https://www.amrita.edu/research/project/alternative-agricultural-techniques-sustainable-food-supply" target="_blank">Read More </a>
+				
+
+            <div class="pro-links">
+                
+                <i class="fab fa-instagram"></i>
+                            </div>
+        </div>
+		<div class="profile">
+<img src="https://webfiles.amrita.edu/2022/10/DK7D5vZv-Waste-Management.jpg" alt="">
+	<h6>Waste Management and Infrastructure </h6>
+	<p>Waste Management practices and impact rural ecosystems </p>
+<a href="https://www.amrita.edu/project/study-waste-management-practices-and-impact-rural-ecosystems/" target="_blank">Read More </a>
+<div class="pro-links">
+<i class="fab fa-facebook"></i>
+</div>
+</div>
+
+<div class="profile">
+<img src="https://webfiles.amrita.edu/2022/10/HNyRjtpW-Education.jpg" alt="">
+<h6>Education & gender equality </h6>
+<p> Impact of seasonal migration on the education of tribal children </p>
+<a href="https://www.amrita.edu/project/impact-seasonal-migration-education-tribal-children/" target="_blank">Read More </a>
+<div class="pro-links">
+<i class="fab fa-linkedin-in"></i>
+</div>
+</div>
+
+<div class="profile">
+<img src="https://webfiles.amrita.edu/2022/10/I9PMiHKb-Skill-Development-Training-1.jpg" alt="">
+<h6>Livelihood & Skill Development </h6>
+<p>Technology for sustainable livelihood</p>
+<a href="https://www.amrita.edu/research/project/technology-sustainable-livelihoods" target="_blank">Read More </a>
+				
+
+				<div class="pro-links">
+					
+					<i class="fab fa-instagram"></i>
+					
+				</div>
+			</div>
+
+
+<div class="profile">
+				<img src="https://webfiles.amrita.edu/2022/10/EDTphJgi-energy.jpg" alt="">
+				<h6>Energy & Environment  </h6>
+				<p>Amrita Sphuranam – Solar Power for Rural Electrification</p>
+    <a href="https://www.amrita.edu/research/project/amrita-sphuranam-solar-power-rural-electrification/" target="_blank">Read More </a>
+				<div class="pro-links">
+					<i class="fab fa-linkedin-in"></i>
+				</div>
+			</div>
+
+		</div>
+	</section>
+	<!-- Experts section ends from here -->
+
+	<footer>
+    <div class="interests-col">
+        <h3>INTERESTS</h3>
+        <ul>
+            <li>Agriculture</li>
+            <li>Arts & Sciences</li>
+            <li>Ayurveda</li>
+            <li>Biotechnology</li>
+            <li>Business</li>
+            <li>Mass Communication</li>
+            <li>Dentistry</li>
+            <li>Engineering</li>
+            <li>Medicine</li>
+            <li>Nano Sciences</li>
+            <li>Nursing</li>
+            <li>Pharmacy</li>
+            <li>Social Work</li>
+            <li>Sustainable Development</li>
+        </ul>
+    </div>
+
+    <div class="programs-col">
+        <h3>PROGRAMS</h3>
+        <ul>
+            <li>Undergraduate</li>
+            <li>Postgraduate</li>
+            <li>Integrated Degree</li>
+            <li>Doctoral</li>
+            <li>International</li>
+            <li>Certificate Courses</li>
+            <li>AHEAD Online Programs</li>
+        </ul>
+    </div>
+<pre>    </pre>
+    <div class="locations-col">
+        <h3>LOCATIONS</h3>        
+ <ul>
+            <li>Amritapuri</li>
+            <li>Amaravati</li>
+            <li>Bengaluru</li>
+            <li>Chennai</li>
+            <li>Coimbatore</li>
+            <li>Kochi</li>
+            <li>Mysuru</li>
+            <li>Faridabad</li>
+            <li>Nagercoil*</li>
+        </ul>
+    </div>
+<pre>   </pre>
+
+    <div class="resources-col">
+        <h3>RESOURCES</h3>
+        <ul>
+            <li>RESEARCH</li>
+            <li>Centers</li>
+            <li>Google Scholar</li>
+            <li>News</li>
+            <li>Patents</li>
+            <li>Projects</li>
+            <li>Publications</li>
+        </ul>
+    </div>
+<pre>  </pre>
+
+    <div class="resources-col">
+        <h3>AUMS</h3>
+        <ul>
+            <li>Academic Calendar</li>
+            <li>Campus Maps</li>
+            <li>Web Support</li>
+            <li>Archive</li>
+            <li>e-SANAD</li>
+            <li>DigiLocker</li>
+            <li>Academic Bank of Credits (ABC)</li>
+        </ul>
+    </div>
+<pre>  </pre>
+    <div class="reports-col">
+        <h3>REPORTS</h3>
+        <ul>
+            <li>IQAC</li>
+            <li>NIRF</li>
+            <li>NBA</li>
+            <li>CIQA</li>
+            <li>Disclosures</li>
+            <li>Approvals</li>
+        </ul>
+    </div>
+   <div class="copyright">
+			<p>
+				@Amrita viswa vidhyapeetham |  Copyright @ 2023 All rights reserved 
+			</p>
+			<div class="pro-links">
+				<i class="fab fa-facebook"></i>
+				<i class="fab fa-instagram"></i>
+				<i class="fab fa-linkedin-in"></i>
+			</div>
+		</div>
+	</footer>
+	<!-- Footer section ends from here -->
+	<script>
+		// Show menu links on burger click
+		$('#menu-btn').click(function(){
+			$('nav .navigation ul').addClass('active')
+		});
+
+		// Hide navbar on click function
+		$('#menu-close').click(function(){
+			$('nav .navigation ul').removeClass('active')
+		});
+	</script>
+</body>
+</html>

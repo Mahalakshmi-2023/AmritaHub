@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amaravati Campus</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    transition: background-color 1s;
+  }
+  .container {
+    width: 80%;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.5s;
+  }
+  .container:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  }
+  .header {
+    background: #005792;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    transition: background 1s;
+  }
+  .header h1 {
+    margin: 0;
+    animation: color-change 2s infinite;
+  }
+  @keyframes color-change {
+    0% { color: #fff; }
+    50% { color: #f4f4f4; }
+    100% { color: #fff; }
+  }
+  .content {
+    line-height: 1.6;
+  }
+  .footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #005792;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+{
+			font-family: Arial, sans-serif;
+			text-align: center;
+			background-color: #f2f2f2;
+		}
+
+		h1 {
+			color: #333;
+			margin-top: 50px;
+			animation: fadeIn 25s ease-in-out;
+		}
+
+		.program-types {
+			display: flex;
+			justify-content: center;
+			margin-bottom: 30px;
+			animation: slideUp 1s ease-in-out;
+		}
+
+		.program-type {
+			display: inline-block;
+			padding: 10px 20px;
+			background-color: #f1f1f1;
+			border-radius: 20px;
+			cursor: pointer;
+			margin-right: 10px;
+			transition: background-color 0.3s ease-in-out;
+		}
+
+		.program-type:hover {
+			background-color: #ff0000; /* Change the background color to red on hover */
+		}
+
+		.program-list {
+			margin-top: 20px;
+			display: none;
+			animation: fadeIn 1s ease-in-out;
+			text-align: center;
+		}
+
+		.program-list.show {
+			display: block;
+		}
+
+		@keyframes fadeIn {
+			0% {
+				opacity: 0;
+			}
+			100% {
+				opacity: 1;
+			}
+		}
+
+		@keyframes slideUp {
+			0% {
+				transform: translateY(50px);
+				opacity: 0;
+			}
+			100% {
+				transform: translateY(0);
+				opacity: 1;
+			}
+		}
+.video-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .video-item {
+            width: 400px;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .video-item iframe {
+            width: 100%;
+            height: 225px;
+        }
+
+        .video-item h3 {
+            margin: 10px 0;
+        }
+h2 {
+            text-align: center;
+            color: #005792;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        
+        .school-header {
+            color: #8b008b;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        
+        .school-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .school-item {
+            margin: 10px;
+            text-align: center;
+            display: block; /* Updated this line */
+        }
+.school-item img {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+        }
+        
+        .school-item a {
+            text-decoration: none;
+            color: #000;
+            display: block; /* Added this line for better control */
+            margin-top: 10px; /* Added some space between the image and the link */
+        }
+ {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #8b008b;
+            margin-bottom: 30px;
+        }
+
+        .job-listing {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .job-title {
+            font-weight: bold;
+        }
+
+        .apply-btn {
+            background-color: #8b008b;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 20px;
+        }
+
+        .apply-btn.rounded {
+            border-radius: 20px;
+        }
+ .cont {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+        
+        .achievement {
+            background-color: white;
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            max-width: 300px;
+        }
+        
+        .achievement img {
+            max-width: 100%;
+            height: auto;
+        }
+{
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .collaboration-container {
+            background-color: #f2f2f2;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .collaborations {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        .collaborations img {
+            max-height: 50px;
+            margin: 10px;
+        }
+
+        .quote-container {
+            background-color: #8b008b;
+            color: white;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .quote-text {
+            flex: 1;
+            font-style: italic;
+            padding-right: 20px;
+        }
+
+        .leadership-info {
+            text-align: right;
+        }
+
+        .leadership-info h3 {
+            margin-bottom: 10px;
+        }
+
+        .leadership-info a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .leadership-info img {
+            max-width: 200px;
+            border-radius: 50%;
+        }
+.gallery {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.gallery img {
+    max-width: 23%;
+    height: auto;
+    margin: 1%;
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.stat {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #f2f2f2;
+    color: #8b008b;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black; /* Added black outline */
+}
+
+.stat-value {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.stat-label {
+    font-size: 16px;
+}
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #000;
+            text-align: center;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .header1 {
+            background-color: #d9ead3;
+            font-weight: bold;
+        }
+        .sub-header1 {
+            background-color: #f4cccc;
+        }
+        .note {
+            font-size: 12px;
+            color: #555;
+        }
+
+</style>
+</head>
+<body>
+<pre>
+
+
+
+
+
+
+</pre>
+  <div class="header">
+    <h1>Amaravati Campus</h1>
+  </div>
+  <div class="container">
+    <div class="content">
+      <p>Amrita Vishwa Vidyapeetham is a leading multi-disciplinary and research-intensive university, establishing its campus in Amaravati. Nestled amidst the scenic beauty of the Krishna River and surrounded by natural wonders and historical sites, Amaravati city embodies the principles of sustainability and liveability.  We are building one of the most buoyant centre of the research, education and technological advancement, in the all new greenfield capital city.
+
+Our institution boasts a sprawling 100-acre campus adorned with green lawns and thriving trees. Conveniently connected by road, rail, and air, it is easily accessible from the IT and business hubs of Andhra Pradesh and Telangana. Equipped with modern laboratories, design tools, and software packages, our departments prepare graduates with a solution-oriented mindset and strong ethical standards. Our vision is to produce quality engineers dedicated to serving society and the nation.
+
+Amrita Vishwa Vidyapeetham, Amaravati Campus offers diverse programs including Integrated M. Sc. Physics, M. Sc. Physics, M. Sc. Data Science, and MBA. These programs are specifically designed to provide students with a comprehensive education that equips them with necessary skills and knowledge to excel in their prospective careers.</p>
+    </div>
+  </div>
+</div>
+<pre>                                                                                                                                             
+
+
+
+
+
+
+
+
+
+
+
+
+</pre>
+<div>
+<div class="school-header">Our schools tailor students to explore their passions.</div>
+    <div class="school-container">
+        <div class="school-item">
+            <img src="https://www.rvscollege.ac.in/wp-content/uploads/2023/05/campus-1554638460297-scaled.jpg" >
+            <a href="https://www.amrita.edu/school/engineering/amaravati/" target="_blank">Engineering</a>
+        </div>
+        <div class="school-item">
+            <img src="https://dt19wmazj2dns.cloudfront.net/wp-content/uploads/2022/05/school-business-thumbnail-768x495.jpg" >
+            <a href="https://www.amrita.edu/school/business/amaravati/" target="_blank">Business</a>
+        </div>
+        <div class="school-item">
+            <img src="https://dt19wmazj2dns.cloudfront.net/wp-content/uploads/2019/11/computer-tech-430x290-1.jpg" >
+            <a href="https://www.amrita.edu/school/computing/amaravati/" target="_blank">Computing</a>
+        </div>
+        <div class="school-item">
+            <img src="https://dt19wmazj2dns.cloudfront.net/wp-content/uploads/2019/12/Chemistry-1-1384.jpg" >
+            <a href="https://www.amrita.edu/school/physical-sciences/amaravati/" target="_blank" >Physical Sciences</a>
+        </div>
+    </div>
+<pre>                                                                                                                                             
+
+
+
+
+
+
+
+
+
+
+
+
+</pre>
+
+</div>
+<div>
+<h1><center>Programs Offered</center></h1>
+
+	<div class="program-types">
+		<div class="program-type" onclick="togglePrograms('undergraduate')">Undergraduate</div>
+		<div class="program-type" onclick="togglePrograms('integrated')">Integrated</div>
+		<div class="program-type" onclick="togglePrograms('postgraduate')">Postgraduate</div>
+		<div class="program-type" onclick="togglePrograms('doctoral')">Doctoral</div>
+	</div>
+
+	<div class="program-list" id="undergraduate-programs">
+		<h4><center>Engineering</center></h4>
+		<center>
+              <ul>
+			<li>Computer Science and Engineering</li>
+			<li>Computer Science and Engineering (Artificial Intelligence)</li>
+			<li>Electronics and Communication Engineering</li>
+                     </center>		
+</ul>
+	</div>
+
+	<div class="program-list" id="integrated-programs">
+		<h4><center>Physical Sciences</center></h4>
+		<ul>
+<center>
+			<li>Integrated M. Sc. Physics</li>
+			<li>Integrated M. Sc. in Data Science</li>
+</center>		
+</ul>
+	</div>
+
+	<div class="program-list" id="postgraduate-programs">
+		<h4><center>Business</center></h4>
+		<ul><center>
+			<li>M.B.A.</li>
+		</center></ul>
+		<h4><center>Physical Sciences</center></h4>
+		<ul><center>
+			<li>M. Sc. Physics</li>
+           </center></ul>
+	</div>
+
+	<div class="program-list" id="doctoral-programs">
+		<h4><center>Engineering</center></h4>
+		<ul><center>
+			<li>Computer Science and Engineering</li>
+			<li>Computer Science and Engineering (Artificial Intelligence)</li>
+		</center></ul>
+		<h4><center>Sciences</center></h4>
+		<ul><center>
+			<li>Physics</li>
+			<li>Mathematics</li>
+			<li>Computer Science and IT</li>
+		</center></ul>
+		<h4><center>Interdisciplinary Studies</center></h4>
+		<ul><center>
+			<li>Interdisciplinary Studies</li>
+			<li>Management</li>
+		</center></ul>
+	</div>
+
+	<script>
+		function togglePrograms(programType) {
+			var programLists = document.getElementsByClassName('program-list');
+			for (var i = 0; i < programLists.length; i++) {
+				programLists[i].classList.remove('show');
+			}
+
+			var selectedPrograms = document.getElementById(programType + '-programs');
+			if (selectedPrograms) {
+				selectedPrograms.classList.add('show');
+			}
+		}
+	</script>
+
+</div>
+</br>
+<pre>                                                                                                                                             
+
+
+
+
+
+
+
+
+
+
+
+
+</pre>
+
+<div>
+<h2><center>Why AMRITA ? </center> </h2>
+    <div class="video-container">
+        <div class="video-item">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/oo3x6XofzTA?si=_DN_chBr4WyrqrTN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <h3>Global Recognition for a Noble Vision – THE Impact – Redefining Education</h3>
+        </div>
+        <div class="video-item">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/tpoD6jIybE0?si=ySr826bv7sVn6eN3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <h3>Amrita First in India & Top 100 in THE Impact Rankings 2021</h3>
+        </div>
+        <div class="video-item">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Qxh9_gMPRoE?si=m_TVEaS3BFTyWBbM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <h3>Amrita Among Top 5 Universities in India – NIRF India Rankings 2021</h3>
+        </div>
+    </div>
+
+</div>
+<pre>                                                                                                                                             
+
+
+
+
+
+
+
+
+
+
+
+
+</pre>
+
+<h1>Hiring Now</h1>
+
+    <div class="job-listing">
+        <div class="job-title">Principal - Engineering</div>
+        <div>Amaravati</div>
+        <a href="https://www.amrita.edu/job/principal-engineering/" target="_blank" class="apply-btn">APPLY NOW</a>
+    </div>
+
+    <div class="job-listing">
+        <div class="job-title">Faculty - Engineering</div>
+        <div>Amaravati</div>
+        <a href="https://www.amrita.edu/job/principal-engineering/" target="_blank" class="apply-btn rounded">APPLY NOW</a>
+    </div>
+
+    <div class="job-listing">
+        <div class="job-title">Administrative Positions</div>
+        <div>Amaravati</div>
+        <a href="https://www.amrita.edu/job/principal-engineering/" target="_blank" class="apply-btn rounded">APPLY NOW</a>
+    </div>
+<pre>                                                                                                                                             
+
+
+
+
+
+
+
+
+
+
+
+
+</pre>
+<h4> Rankings & Accreditation </h4>
+<div class="cont">
+        <div class="achievement">
+            <img src="https://dt19wmazj2dns.cloudfront.net/wp-content/uploads/2023/06/nirf-logo-2023-seventh-best.jpg" alt="NIRF 7th Best University in India">
+        </div>
+        <div class="achievement">
+            <img src="https://webfiles.amrita.edu/2022/03/cwwdUGj7-ranking-group-01-03-1.svg" alt="NAAC A++ Accredited">
+        </div>
+        <div class="achievement">
+            <img src="https://webfiles.amrita.edu/2023/06/FpEMTs4Y-impact-2023-ranking-inner-768x246.png" alt="No. 1 THE Impact Rankings in India 2023">
+        </div>
+        <div class="achievement">
+            <img src="https://webfiles.amrita.edu/2022/03/wtGQlWUV-ranking-group-02-02.svg" alt="No. 1 THE World University Rankings 2020">
+        </div>
+        <div class="achievement">
+            <img src="https://webfiles.amrita.edu/2022/03/uq3hrifV-ranking-group-02-03.svg" alt="No. 1 QS World University Rankings 2020">
+        </div>
+        <div class="achievement">
+            <img src="https://dt19wmazj2dns.cloudfront.net/wp-content/uploads/2019/01/unesco-amrita-logo-1.png" alt="UNESCO Chair for Experiential Learning for Sustainable Innovation & Development">
+        </div>
+        <div class="achievement">
+            <img src="https://th.bing.com/th?id=OIP.8BltQ_BHAGtE6escctfQzwHaEK&w=333&h=187&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2" alt="UNESCO Chair for Gender Equality and Women's Empowerment">
+        </div>
+    </div>
+<pre>                                                                                                                                             
+
+
+
+
+
+
+
+
+
+
+
+
+</pre>
+
+<div class="collaboration-container">
+        <h4>COLLABORATIONS WITH WORLD'S LEADING 200+ UNIVERSITIES</h4>
+        <div class="collaborations">
+            <img src="https://www.shorttermprograms.com/uploads/institution-logos/university-of-oxford.png" alt="University of Oxford">
+            <img src="https://th.bing.com/th/id/OIP.1ap71_jKAt0azaIMt2w3cgAAAA?w=474&h=474&rs=1&pid=ImgDetMain" alt="University of Cambridge">
+            <img src="https://th.bing.com/th/id/OIP.uS6jQ6Lt6QpWhIGc4N2njwAAAA?rs=1&pid=ImgDetMain" alt="Stanford University">
+            <img src="https://logos-world.net/wp-content/uploads/2020/12/Harvard-Emblem.png" alt="Harvard University">
+            <img src="https://th.bing.com/th?q=Columbia+University+Logo+Clip+Art&w=120&h=120&c=1&rs=1&qlt=90&cb=1&dpr=1.5&pid=InlineBlock&mkt=en-IN&cc=IN&setlang=en&adlt=strict&t=1&mw=247" alt="Columbia University">
+            <img src="https://th.bing.com/th?id=OIP.SBNDyqK5pTdL5fqfHhTpcAHaDK&w=349&h=149&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2" alt="University at Buffalo">
+            <img src="https://th.bing.com/th?id=OIP.Gj02mtZxHsWi93sSgIEkwgHaFj&w=288&h=216&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2" alt="UC San Diego">
+            <img src="https://armacad.info/images/organizations/539/logo_14a17c1661224fd2.png" alt="Technical University of Munich">
+            <img src="https://th.bing.com/th?id=OIP.NrcWhbH-YJMuDiyjvTXugQHaDC&w=349&h=143&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2" alt="Delft University of Technology">
+            <img src="https://th.bing.com/th?id=OIP.8hs8OByOd8FfZWkniXZRhwHaCC&w=349&h=96&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2" alt="University of Groningen">
+            <img src="https://th.bing.com/th?id=OIP.PENc6rMXmEzCLH1F7w5Z7gHaHE&w=255&h=244&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2" alt="Uppsala University">
+            <img src="https://th.bing.com/th?id=OIP.ZXVQPQMiXqjtOsA-OhGcNgHaBy&w=350&h=84&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2" alt="The University of Arizona">
+            <img src="https://th.bing.com/th?id=OIP.ze6_wJLKHre5NdyR03C7yAAAAA&w=335&h=113&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2" alt="UC Davis">
+            <img src="https://th.bing.com/th?id=OIP.EmniDK8epdHxaan4Yd7U9AHaFj&w=288&h=216&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2" alt="Penn State">
+            <img src="https://th.bing.com/th?id=OIP.bUAHit_TXKvyTx40VpA39gHaD4&w=345&h=181&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2" alt="Aalto University">
+        </div>
+    </div>
+
+<pre>                                                                                                                                             
+
+
+
+
+
+
+
+
+</pre>
+<div class="gallery">
+        <h2>Gallery</h2>
+        <img src="https://webfiles.amrita.edu/2022/03/UFu6B2t0-amaravati-campus-images-001.jpg" alt="Image 1">
+        <img src="https://webfiles.amrita.edu/2022/03/iYh3rTjH-amaravati-campus-images-002.jpg" alt="Image 2">
+        <img src="https://webfiles.amrita.edu/2022/03/DY6BLYYz-amaravati-campus-images-003.jpg" alt="Image 3">
+        <img src="https://webfiles.amrita.edu/2022/03/kZ2j4VCx-amaravati-campus-images-004.jpg" alt="Image 4">
+    </div>
+<pre>
+
+
+
+
+
+
+
+
+
+</pre>
+
+    <div class="stats">
+        <div class="stat">
+            <div class="stat-value">207</div>
+            <div class="stat-label">Programs</div>
+            <img src ="">
+        </div>
+        <div class="stat">
+            <div class="stat-value">20,250+</div>
+            <div class="stat-label">Students</div>
+        </div>
+
+        <div class="stat">
+            <div class="stat-value">08</div>
+            <div class="stat-label">Campuses</div>
+        </div>
+        <div class="stat">
+            <div class="stat-value">1470+</div>
+            <div class="stat-label">Faculty Members</div>
+        </div>
+        <div class="stat">
+            <div class="stat-value">15</div>
+            <div class="stat-label">Constituent Schools</div>
+        </div>
+        <div class="stat">
+            <div class="stat-value">800+</div>
+            <div class="stat-label">Ph.D Faculty</div>
+        </div>
+    </div>
+<pre>                                                                                                                                             
+
+
+
+
+
+
+
+
+</pre>
+
+<h2>B.Tech Fee Structure (Annual) - 2024-25</h2>
+
+<table>
+    <tr>
+        <th rowspan="2">Fee Type</th>
+        <th rowspan="2">Slab</th>
+        <th colspan="3" class="header1">Amaravati</th>
+    </tr>
+    <tr class="header1">
+        <th>CAI, CSE</th>
+    
+        <th>CCE</th>
+    </tr>
+    <tr>
+        <td class="sub-header1">Scholarship Fees</td>
+        <td>1</td>
+        <td>INR 1,00,000</td>
+        <td>INR 1,00,000</td>
+    </tr>
+    <tr>
+        <td class="sub-header1">Scholarship Fees</td>
+        <td>2</td>
+        <td>INR 2,00,000</td>
+        
+        <td>INR 1,75,000</td>
+    </tr>
+    <tr>
+        <td class="sub-header1">Scholarship Fees</td>
+        <td>3</td>
+        <td>INR 3,00,000</td>
+        
+        <td>INR 2,25,000</td>
+    </tr>
+    <tr>
+        <td class="sub-header1">Regular Fees<br>(Non-Scholarship Category)</td>
+        <td>4</td>
+        <td>INR 5,00,000</td>
+        
+        <td>INR 2,50,000</td>
+    </tr>
+</table>
+
+<p class="note">College Caution Deposit (One Time): INR 10,000</p>
+
+<pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</pre>
+
+
+    <div class="quote-container">
+        <div class="quote-text">
+            <p>&quot;Life and living are not the same. For living, we may need a job, money, a home, a car and other creature comforts. However, these alone fail to make life complete. For that, we need love, compassion, tenderness -- a heart that knows and responds to the pain of others. We need broadmindedness and maturity in thought and action. - Amma&quot;</p>
+        </div>
+        <div class="leadership-info">
+            <h3>Unparalleled Leadership</h3>
+            <p>The guiding light of Amrita Vishwa Vidyapeetham</p>
+            <a href="https://amrita.edu/amma/" target ="_blank" > Know More</a>
+            <img src="https://webfiles.amrita.edu/2019/11/zW3orNKx-Mata-Amritanandamayi-768x611.png" alt="Amma">
+        </div>
+    </div>
+  </body>
+</html>

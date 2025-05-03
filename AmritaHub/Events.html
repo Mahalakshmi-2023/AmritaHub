@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Events</title>
+  <style>
+    *, *::after, *::before {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5e6da;
+    }
+
+    .image-container {
+      position: relative;
+    }
+
+    .image-container img {
+      width: 100%;
+      opacity: 0.8;
+      transition: opacity 0.3s ease;
+    }
+
+   
+
+    .text-bottom-middle {
+      position: absolute;
+      bottom: 10%;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 15px;
+      font-size: 35px;
+      color: white;
+      font-weight: bold;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .section {
+      padding: 50px 20px;
+      background-color: #f5e6da;
+      text-align: center;
+    }
+
+    .section h2 {
+      color: #B10F56;
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+
+    .events-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .event {
+      background-color: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      transition: transform 0.3s ease;
+    }
+
+    .event:hover {
+      transform: scale(1.05);
+    }
+
+    .event img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      transition: transform 0.5s ease-in-out, filter 0.5s ease-in-out;
+    }
+
+    .event:hover img {
+      transform: scale(1.2);
+    }
+
+    .event-info {
+      padding: 15px;
+    }
+
+    .event-info p {
+      margin: 5px 0;
+      color: #555;
+    }
+
+    .event-info p.event-date {
+      color: #a94442;
+      font-weight: bold;
+    }
+
+    .events-container.blur-all .event img {
+      filter: blur(5px);
+      opacity: 0.5;
+    }
+
+    .event:hover img {
+      filter: none !important;
+      opacity: 1 !important;
+    }
+
+   body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        footer {
+            background-color: #f9f9f9;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .footer-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-section {
+            flex: 1;
+            margin: 20px;
+        }
+
+        .footer-section h2, .footer-section h3 {
+            color: #d00052;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .footer-section p {
+            color: #666;
+            font-size: 14px;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-section ul li {
+            margin: 5px 0;
+        }
+
+        .footer-section ul li a {
+            color: #000;
+            text-decoration: none;
+        }
+
+        .footer-section ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .social-media {
+            margin-top: 20px;
+        }
+
+        .social-media a img {
+            width: 24px;
+            margin: 0 10px;
+        }
+
+        .footer-bottom {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .footer-bottom img {
+            margin: 0 10px;
+            width: 100px;
+        }
+  </style>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const events = document.querySelectorAll(".event");
+      events.forEach(event => {
+        event.addEventListener("mouseenter", () => {
+          event.parentElement.classList.add("blur-all");
+        });
+        event.addEventListener("mouseleave", () => {
+          event.parentElement.classList.remove("blur-all");
+        });
+      });
+    });
+  </script>
+</head>
+<body>
+   
+
+    
+  <div class="image-container">
+    <img src="https://webfiles.amrita.edu/2020/05/IlZJZE8c-amrita-vishwa-vidyapeetham-coimbatore-campus-dron-image-01-2.jpg" alt="Amrita Vishwa Vidyapeetham Campus">
+    <div class="text-bottom-middle">Amrita Vishwa Vidyapeetham EVENTS</div>
+  </div>
+
+<iframe width="100%" height="562" src="https://www.youtube.com/embed/DhAxq4Zl5K4" title="Amrita Ranked Among Top 100 in the World | 1st in India | Amrita Vishwa Vidyapeetham" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <div class="section">
+    <h2>Upcoming Events</h2>
+    <div class="events-container">
+      <div class="event">
+       <a href="counselors conference.html" target="blank"> <img src="https://webfiles.amrita.edu/2024/06/counselor-conference-2024-featured-image.jpg" alt="Counselors Conference 2024"></a>
+        <div class="event-info">
+          <p class="event-date">28 Jun 2024</p>
+          <p>Counselors Conference 2024</p>
+        </div>
+      </div>
+      <div class="event">
+        <a href="workshop on waste to health.html" target="blank"><img src="https://webfiles.amrita.edu/2024/06/international-workshop-waste-to-wealth-featured-img.jpg" alt="International workshop on waste to wealth"></a>
+        <div class="event-info">
+          <p class="event-date">08 Jul 2024</p>
+          <p>International Workshop on Waste to Wealth</p>
+        </div>
+      </div>
+      <div class="event">
+        <a href="ue3.html" target="blank"><img src="https://webfiles.amrita.edu/2024/05/amrita-fdp-on-nature-inspired-engineering-featured-img.jpg" alt="Unlocking Nature's Engineering Secrets"></a>
+        <div class="event-info">
+          <p class="event-date">03 Jul 2024</p>
+          <p>Unlocking Nature's Engineering Secrets</p>
+        </div>
+      </div>
+      <div class="event">
+       <a href="ue4.html" target="blank" ><img src="https://webfiles.amrita.edu/2024/02/eD8Wotdi-international-conference-robotics-featured-image.jpg" alt="International Conference on Robotics and Mechatronics"></a>
+        <div class="event-info">
+          <p class="event-date">08 Aug 2024</p>
+          <p>International Conference on Robotics and Mechatronics</p>
+        </div>
+      </div>
+      <div class="event">
+        <a href="ue5.html" target="blank"><img src="https://webfiles.amrita.edu/2024/05/gender-technology-conference-featured.png" alt="Gender and Technology Conference 2025"></a>
+        <div class="event-info">
+          <p class="event-date">16 Jan 2025</p>
+          <p>Gender and Technology Conference 2025</p>
+        </div>
+      </div>
+      <div class="event">
+        <a href="ue6.html" target="blank"><img src="https://webfiles.amrita.edu/2024/04/k2Qt2HIY-amrita-amma-sri-2025-event-featured-img.jpg" alt="International Conference on Advances in Materials, Modeling and Analysis"></a>
+        <div class="event-info">
+          <p class="event-date">09 Jan 2025</p>
+          <p>International Conference on Advances in Materials, Modeling and Analysis</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="section">
+    <h2>Past Events</h2>
+    <div class="events-container">
+      <div class="event">
+        <a href="https://www.amrita.edu/events/amrita-pool-campus-drive/" target="blank"><img src="https://webfiles.amrita.edu/2024/04/LYxIMdZB-amrita-school-pharmacy-pool-campus-drive-feature-image.jpg" alt="Amrita Pool Campus Drive"></a>
+        <div class="event-info">
+          <p class="event-date">27 Apr 2024</p>
+          <p>Amrita Pool Campus Drive</p>
+        </div>
+      </div>
+      <div class="event">
+       <a href="https://www.amrita.edu/events/amrita-pharmacon/" target="blank"> <img src="https://webfiles.amrita.edu/2024/04/KkH7h54H-amrita-pharmacon-2024-event-featured-img.jpg" alt="Amrita Pharmacon 2024"></a>
+        <div class="event-info">
+          <p class="event-date">20 May 2024</p>
+          <p>Amrita Pharmacon 2024</p>
+        </div>
+      </div>
+      <div class="event">
+        <a href="https://www.amrita.edu/events/three-day-symposium-on-how-do-cells-work-as-simple-chemical-engines/" target="blank" ><img src="https://webfiles.amrita.edu/2024/04/XTlHqXt1-three-day-symposium-how-cells-work-as-simple-chemical-engines-featured-image.jpg" alt="Three day Symposium on 'How do cells work'"></a>
+        <div class="event-info">
+          <p class="event-date">28 May 2024</p>
+          <p>Three day Symposium on 'How do cells work'</p>
+        </div>
+      </div>
+      <div class="event">
+        <a href="https://www.amrita.edu/events/open-house/" target="blank"><img src="https://webfiles.amrita.edu/2024/05/open-house-school-of-artificial-inteligence-amrita-event-featured-image.jpg" alt="Open House"></a>
+        <div class="event-info">
+          <p class="event-date">08 Jun 2024</p>
+          <p>Open House</p>
+        </div>
+      </div>
+      <div class="event">
+        <a href="https://www.amrita.edu/events/water-day-2024/" target="blank"><img src="https://webfiles.amrita.edu/2024/03/6cVfIxrB-world-water-day-thumb-2024.jpg" alt="Wave of change: way for sustainable life"></a>
+        <div class="event-info">
+          <p class="event-date">22 Mar 2024</p>
+          <p>Wave of change: way for sustainable life</p>
+        </div>
+      </div>
+      <div class="event">
+        <a href="https://www.amrita.edu/events/aicar/" target="blank"><img src="https://webfiles.amrita.edu/2024/03/wtJrJiak-ai-carnival-featured-image.jpg" alt="AI carnival explore, create, Innovate"></a>
+        <div class="event-info">
+          <p class="event-date">19 Apr 2024</p>
+          <p>AI carnival explore, create, Innovate</p>
+        </div>
+      </div>
+    </div>
+  </div>
+<footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h2>AMRITA VISHWA VIDYAPEETHAM</h2>
+                <p>DEEMED TO BE UNIVERSITY UNDER SECTION 3 OF UGC ACT, 1956</p>
+                <ul>
+                    <li><a href="#">Apply now</a></li>
+                    <li><a href="#">Maps & Direction</a></li>
+                    <li><a href="#">Write to us</a></li>
+                    <li><a href="#">Outreach</a></li>
+                </ul>
+                <div class="social-media">
+                    <a href="#"><img src="https://th.bing.com/th?id=OIP.zaiIl16zqTKDuhYIxeop0wHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.1&pid=3.1&rm=2" alt="Facebook"></a>
+                    <a href="#"><img src="https://th.bing.com/th?id=OIP.H836RvDYYgQZcZn0TC8qBAAAAA&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.1&pid=3.1&rm=2" alt="Twitter"></a>
+                    <a href="#"><img src="https://th.bing.com/th?id=OIP.3yLsbW3kJ5zU9-957TR_mQHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.1&pid=3.1&rm=2" alt="YouTube"></a>
+                    <a href="https://www.linkedin.com/company/amrita-vishwa-vidyapeetham-official/?lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3BihypPYlKScOQLSK7lZkX9w%3D%3D" target="blank"><img src="https://th.bing.com/th?id=OIP.CeXvv9KKTpMJ1LF3B8t8UAHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.1&pid=3.1&rm=2" alt="LinkedIn"></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>INTERESTS</h3>
+                <ul>
+                    <li><a href="#">Agriculture</a></li>
+                    <li><a href="#">Arts & Sciences</a></li>
+                    <li><a href="#">Ayurveda</a></li>
+                    <!-- Add other interests here -->
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>PROGRAMS</h3>
+                <ul>
+                    <li><a href="#">Undergraduate</a></li>
+                    <li><a href="#">Postgraduate</a></li>
+                    <li><a href="#">Integrated Degree</a></li>
+                    <!-- Add other programs here -->
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>ABOUT AMRITA</h3>
+                <ul>
+                    <li><a href="#">Rankings</a></li>
+                    <li><a href="#">Accreditation</a></li>
+                    <li><a href="#">Leadership</a></li>
+                    <!-- Add other about links here -->
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>LOCATIONS</h3>
+                <ul>
+                    <li><a href="#">Amritapuri</a></li>
+                    <li><a href="#">Amaravati</a></li>
+                    <li><a href="#">Bengaluru</a></li>
+                    <!-- Add other locations here -->
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>RESOURCES</h3>
+                <ul>
+                    <li><a href="#">AUMS</a></li>
+                    <li><a href="#">Academic Calendar</a></li>
+                    <li><a href="#">Web Support</a></li>
+                    <!-- Add other resources here -->
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>REPORTS</h3>
+                <ul>
+                    <li><a href="#">IQAC</a></li>
+                    <li><a href="#">NIRF</a></li>
+                    <li><a href="#">NBA</a></li>
+                    <!-- Add other reports here -->
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <img src="https://webfiles.amrita.edu/2024/02/gIL6qzuO-IGBC-platinum-Plaque.svg" alt="IGBC Green Campus">
+            <img src="https://th.bing.com/th?q=Dun+and+Bradstreet+Verified+Logo&w=120&h=120&c=1&rs=1&qlt=90&cb=1&dpr=1.1&pid=InlineBlock&mkt=en-IN&cc=IN&setlang=en&adlt=moderate&t=1&mw=247" alt="Dun & Bradstreet">
+        </div>
+    </footer>
+</body>
+</html>

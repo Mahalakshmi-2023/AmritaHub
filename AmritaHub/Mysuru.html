@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Embed Bing Maps</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-image: url('https://static.vecteezy.com/system/resources/previews/004/773/862/original/stylish-templates-with-organic-abstract-shapes-and-line-in-nude-colors-pastel-background-in-minimalist-style-contemporary-illustration-free-vector.jpg');
+            background-size: cover;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            position: relative;
+            top: 50px;
+        }
+
+        h2 {
+            color: #8b008b;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        p {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .quote-box {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        blockquote {
+            margin: 0;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            font-style: italic;
+            flex: 1;
+        }
+
+        cite {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        img {
+            max-width: 150px;
+            max-height: 150px;
+            border-radius: 50%;
+            margin-left: 20px;
+        }
+
+        #map-container {
+            width: 100%;
+            height: 600px;
+            margin-bottom: 50px;
+        }
+
+        .logo-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .logo-container h1 {
+            font: bold 6rem 'Arial', sans-serif;
+            color: #000;
+            margin: 0;
+            position: relative;
+            display: inline-block;
+        }
+
+        .logo-container h1:before {
+            content: "";
+            position: absolute;
+            top: calc(100% - 2px);
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background-color: #cf0000;
+            transform-origin: center center;
+            transform: scaleX(0);
+            animation: line-animation 3s ease infinite alternate;
+        }
+
+        @keyframes line-animation {
+            0% { transform: scaleX(0); }
+            15% { transform: scaleX(0); }
+            20%, 25% { transform: scaleX(1); top: calc(100% - 2px); }
+            50% { transform: scaleX(1); top: 0px; }
+            70% { transform: scaleX(0.2); top: 0px; }
+            80%, 100% { transform: scaleX(0.2); top: 0px; }
+        }
+
+        @keyframes clip-path-reveal-1 {
+            0%, 25% { clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%); }
+            50% { clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); }
+        }
+    </style>
+</head>
+<body>
+<pre>
+
+
+
+
+
+
+
+
+</pre>
+
+<div class="logo-container">
+    <h1 id="page-logo">Mysuru</h1>
+</div>
+<pre>
+
+
+
+
+
+
+
+
+</pre>
+<div id="map-container">
+    <iframe
+        width="100%"
+        height="100%"
+        frameborder="0"
+        src="https://www.google.com/maps/d/u/0/embed?mid=13fWSWJ8bscqtdqRUEi030VjKWgY&ll=12.273386872786359%2C76.62997125&z=13"
+        allowfullscreen>
+    </iframe>
+</div>
+
+<div class="container">
+    <h2>From the Heart</h2>
+    <p>Here's what people had to say about us</p>
+    <div class="quote-box">
+        <blockquote>
+            <p>The wireless sensor system developed by Amrita Vishwa Vidyapeetham and successfully tested at Munnar in Kerala to forecast natural disasters like landslides can be replicated in similar disaster-prone areas elsewhere in the country</p>
+            <cite>Dr. R. Chidambaram<br>Principal Scientific Advisor to the Government of India</cite>
+        </blockquote>
+        <img src="https://webfiles.amrita.edu/2020/05/IFhTigph-Dr-Lee-Hartwell-01.png" alt="Person 1">
+    </div>
+    <div class="quote-box">
+        <blockquote>
+            <p>What makes Amrita students special? Western science leads to knowledge. Eastern science leads to understanding. Amrita has both Western and Eastern traditions in education.</p>
+            <cite>Dr. Lee Hartwell<br>Nobel Laureate</cite>
+        </blockquote>
+        <img src="https://webfiles.amrita.edu/2021/06/ynOaZWfS-New-Project111-2.png" alt="Person 2">
+    </div>
+</div>
+
+</body>
+</html>

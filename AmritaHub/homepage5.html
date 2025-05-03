@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>UID casestudy</title>
+
+	<!-- font Awesome CDN link -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
+	<!-- External CSS -->
+	<link rel="stylesheet" href="style.css">
+
+	<!-- JQuery CDN link -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head> 
+<title>CAMPUS</title>
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700;1,800;1,900&display=swap');
+
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body
+{
+	font-family: 'Poppins', sans-serif;
+}
+
+h1
+{
+	font-size: 2.5rem;
+	font-weight: 700;
+	color: rgb(35, 35, 85);
+}
+
+span
+{
+	font-size: .9rem;
+}
+
+h6
+{
+	font-size: 1.1rem;
+	color: rgb(24, 24, 49);
+}
+
+
+/*------------- Navigation style start ------------*/
+nav
+{
+	position: fixed;
+	width: 100%;
+	background-color: #fff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1vw 8vw;
+	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+	z-index: 1;
+}
+
+nav .logo
+{
+	width: 150px;
+	cursor: pointer;
+}
+
+nav .navigation
+{
+	display: flex;
+}
+
+#menu-btn
+{
+	width: 30px;
+	height: 30px;
+	display: none;
+}
+
+#menu-close
+{
+	display: none;
+}
+
+nav .navigation ul
+{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+nav .navigation ul li
+{
+	list-style: none;
+	margin-left: 30px;
+}
+
+nav .navigation ul li a
+{
+	text-decoration: none;
+	color: rgb(21, 21, 100);
+	font-size: 16px;
+	font-weight: 500;
+	transition: 0.3s ease;
+}
+
+nav .navigation ul li a.active,
+nav .navigation ul li a:hover
+{
+	color: #FDC93B;
+
+}
+body {
+    background-image: url('https://eng.pdn.ac.lk/wp-content/uploads/2023/10/B-min-scaled.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+/*------------- Footer section styling starts ------------*/
+footer
+{
+	padding: 8vw;
+	background-color: #101c32;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}
+
+footer .footer-col
+{
+	padding-bottom: 40px;
+}
+
+footer h3
+{
+	color: rgb(241, 240, 245);
+	font-weight: 400;
+	padding-bottom: 20px;
+}
+
+footer li
+{
+	list-style: none;
+	color: #7b838a;
+	padding: 10px 0;
+	font-size: 15px;
+	cursor: pointer;
+	transition: 0.3s ease;
+}
+
+footer li:hover
+{
+	color: rgb(241, 240, 245);
+}
+
+footer p
+{
+	color: #7b838a;
+}
+
+footer .subscribe
+{
+	margin-top: 20px;
+}
+
+footer input
+{
+	width: 220px;
+	padding: 15px 12px;
+	background: #334F6C;
+	border: none;
+	outline: none;
+	color: #fff;
+}
+
+footer .subscribe a
+{
+	text-decoration: none;
+	font-size: 0.9rem;
+	padding: 12px 15px;
+	background-color: #fff;
+	font-weight: 600;
+}
+
+footer .subscribe a.yellow
+{
+	color: #fff;
+	background: #fdc93b;
+	transition: 0.3s ease;
+}
+
+footer .subscribe a.yellow:hover
+{
+	color: rgb(21, 21, 100);
+	background: #fff;
+}
+
+footer .copyright
+{
+	margin-top: 20px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+footer .copyright p, footer .copyright p > a
+{
+	color: #fff;
+	text-decoration: none;
+}
+
+footer .copyright .pro-links
+{
+	margin-top: 0px;
+}
+
+footer .copyright .pro-links i
+{
+	background-color: #5f7185;
+	color: #fff;
+}
+
+footer .copyright .pro-links i:hover
+{
+	background: #fdc93b;
+	color: #2c2c2c;
+}
+/*------------- Footer section styling ends ------------*/
+
+
+
+</style>
+<body>
+<!-- Navigation start -->
+	<nav>
+		<img src="https://th.bing.com/th/id/R.2795d68c7fbf4730b97f1ab38be370ad?rik=yg9zGXWFQp%2bC0w&riu=http%3a%2f%2fieomsociety.org%2findia2021%2fwp-content%2fuploads%2f2021%2f01%2fLogo_AMRITA-2.png&ehk=LDlkidMPvE8A%2foOCqZKpC0DF1rJ53veLHDAQMf%2f8WuQ%3d&risl=&pid=ImgRaw&r=0" class="logo" alt="">
+
+		<div class="navigation">
+			<ul>
+				<i id="menu-close" class="fas fa-times"></i>
+				<li><a href="index.html" target="_blank">Home</a></li>
+				<li><a href="Amma.html" target="_blank" >Amma</a></li>
+                                <li><a href="admissions.html" target="_blank" >Admissions</a></li>
+				<li><a href="homepage5.html" target="_blank" class="active" >Campus</a></li>
+				<li><a href="Events.html" target="_blank" >Events</a></li>
+				<li><a href="contact.html" target="_blank" >Contact</a></li>
+                                <li><a href="sports.html" target="_blank" >Sports</a></li>			
+</ul>
+
+			<img src="https://alchetron.com/cdn/amritapuri-campus-6dfd98b4-3cea-4070-b8c1-882c7899ffd-resize-750.jpg alt="image">
+
+		</div>
+	</nav>
+	<!-- Navigation ends -->
+
+
+
+<iframe src="homepage2.html" style="border:none;"height="660" width="18%"></iframe>
+<iframe  name="campus1" style="border:none;" height="660" width="81%">
+
+</iframe>
+
+<footer>
+    <div class="interests-col">
+        <h3>INTERESTS</h3>
+        <ul>
+            <li>Agriculture</li>
+            <li>Arts & Sciences</li>
+            <li>Ayurveda</li>
+            <li>Biotechnology</li>
+            <li>Business</li>
+            <li>Mass Communication</li>
+            <li>Dentistry</li>
+            <li>Engineering</li>
+            <li>Medicine</li>
+            <li>Nano Sciences</li>
+            <li>Nursing</li>
+            <li>Pharmacy</li>
+            <li>Social Work</li>
+            <li>Sustainable Development</li>
+        </ul>
+    </div>
+
+    <div class="programs-col">
+        <h3>PROGRAMS</h3>
+        <ul>
+            <li>Undergraduate</li>
+            <li>Postgraduate</li>
+            <li>Integrated Degree</li>
+            <li>Doctoral</li>
+            <li>International</li>
+            <li>Certificate Courses</li>
+            <li>AHEAD Online Programs</li>
+        </ul>
+    </div>
+<pre>    </pre>
+    <div class="locations-col">
+        <h3>LOCATIONS</h3>        
+ <ul>
+            <li>Amritapuri</li>
+            <li>Amaravati</li>
+            <li>Bengaluru</li>
+            <li>Chennai</li>
+            <li>Coimbatore</li>
+            <li>Kochi</li>
+            <li>Mysuru</li>
+            <li>Faridabad</li>
+            <li>Nagercoil*</li>
+        </ul>
+    </div>
+<pre>   </pre>
+
+    <div class="resources-col">
+        <h3>RESOURCES</h3>
+        <ul>
+            <li>RESEARCH</li>
+            <li>Centers</li>
+            <li>Google Scholar</li>
+            <li>News</li>
+            <li>Patents</li>
+            <li>Projects</li>
+            <li>Publications</li>
+        </ul>
+    </div>
+<pre>  </pre>
+
+    <div class="resources-col">
+        <h3>AUMS</h3>
+        <ul>
+            <li>Academic Calendar</li>
+            <li>Campus Maps</li>
+            <li>Web Support</li>
+            <li>Archive</li>
+            <li>e-SANAD</li>
+            <li>DigiLocker</li>
+            <li>Academic Bank of Credits (ABC)</li>
+        </ul>
+    </div>
+<pre>  </pre>
+    <div class="reports-col">
+        <h3>REPORTS</h3>
+        <ul>
+            <li>IQAC</li>
+            <li>NIRF</li>
+            <li>NBA</li>
+            <li>CIQA</li>
+            <li>Disclosures</li>
+            <li>Approvals</li>
+        </ul>
+    </div>
+   <div class="copyright">
+			<p>
+				@Amrita viswa vidhyapeetham |  Copyright @ 2023 All rights reserved 
+			</p>
+			<div class="pro-links">
+				<i class="fab fa-facebook"></i>
+				<i class="fab fa-instagram"></i>
+				<i class="fab fa-linkedin-in"></i>
+			</div>
+		</div>
+	</footer>
+	<!-- Footer section ends from here -->
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title >ADMISSION FORM </title>
+<style>
+body {
+  background-image: url("https://collegefinancialaidadvisors.com/wp-content/uploads/2014/02/GettyImages-480984407.jpg");
+  background-size:1500px;
+}
+</style>
+</head>
+<body>
+<h1 align="center" style="color:thickpink">AMRITA  VISHWA  VIDYAPEETHAM</h1>
+<h2 align="center">admission registaration form</h2>
+<form>
+<fieldset >
+<legend>INFORMATION</legend>
+        <label for="fname" ><b>First Name:</b></label>
+        <input type="text" id="fname" name="fname" >
+<br><br>
+        <label for="lname"><b>Last Name:</b></label>
+        <input type="text" id="lname" name="lname">
+<br><br>
+        <label for="email"><b>Email:</b></label>
+        <input type="email" id="email" name="email"  placeholder="id@gmail.com">
+<br><br>
+        <label for="phone"><b>Phone:</b></label>
+        <input type="tel" id="phone" name="phone"  placeholder="+91 1234567890">
+<br><br>
+        <label for="gender"><b>Gender:</b></label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" >
+        <label for="female" >Female</label>
+ <br><br>
+ <label for="dob"> <b>DOB :</b></label>
+       <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+<br><br>
+       <label for="password"> <b>Password:</b></label>
+       <input type="password" id="password" placeholder=""></input>
+<br><br>
+<label for="address"><b>Address:</b></label>
+        <textarea name="msg" rows="2" colums="2"  placeholder="district,state,pincode"></textarea></br>
+<br>
+<br>
+        <label for="course"><b>Course:</b></label>
+        <select onchange="window.open(this.value, 'bang')">
+        <option value="">Select a course</option>
+        <option value="C:\Users\venka\OneDrive\Desktop\B.TECH\SEMESTER 2\USER INTERFACE DESIGN\AMRITA WEBPAGE\documentsbca.html">BCA</option>
+        <option value="C:\Users\venka\OneDrive\Desktop\B.TECH\SEMESTER 2\USER INTERFACE DESIGN\AMRITA WEBPAGE\documentsbba.html" >BBA</option>
+        <option value="C:\Users\venka\OneDrive\Desktop\B.TECH\SEMESTER 2\USER INTERFACE DESIGN\AMRITA WEBPAGE\documentsbtech.html">B.Tech</option>
+        <option value="C:\Users\venka\OneDrive\Desktop\B.TECH\SEMESTER 2\USER INTERFACE DESIGN\AMRITA WEBPAGE\documentsmba.html">MBA</option>
+        <option value="C:\Users\venka\OneDrive\Desktop\B.TECH\SEMESTER 2\USER INTERFACE DESIGN\AMRITA WEBPAGE\documentsmca.html">MCA</option>
+        <option value="C:\Users\venka\OneDrive\Desktop\B.TECH\SEMESTER 2\USER INTERFACE DESIGN\AMRITA WEBPAGE\documentsmtech.html">M.Tech</option>
+        </select>
+</fieldset>
+<br>
+<iframe style="border:none;" name="bang" height="400" width="100%"></iframe>
+<br>
+        <input type="submit"  value="REGISTER">
+        <input type="submit" onclick="alert('SUCCESSFULLY SUBITED')" value="SUBMIT">
+        <input type="reset" value="RESET">
+    </form>
+
+</body>
+</html>
